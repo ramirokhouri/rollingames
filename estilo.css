@@ -1,23 +1,27 @@
 header {
-    margin-top: 5em;
-    background-image: url("https://i.blogs.es/1be379/doom-eternal/1366_2000.jpeg");
-    height: 33vh;
-    background-position: center center;
-    background-size: cover;
+  margin-top: 5em;
+  background-image: url("https://i.blogs.es/1be379/doom-eternal/1366_2000.jpeg");
+  height: 33vh;
+  background-position: center center;
+  background-size: cover;
 }
 
 .card {
-    max-width: 45vw;
+  max-width: 45vw;
 }
 
 .card:hover {
-    filter: contrast(75%);
+  filter: contrast(75%);
 }
 
-.card img{
-    width: 100%;
-    height: 25vh;
-    object-fit: fill;
+.card img {
+  width: 100%;
+  height: 25vh;
+  object-fit: fill;
+}
+
+.container {
+  min-width: 85vw !important;
 }
 
 /* Bootstrap Breakpoints */
@@ -32,14 +36,14 @@ header {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .card {
-        max-width: 22.5vw;
-    }
+  .card {
+    max-width: 22.5vw;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .card {
-        max-width: 15vw;
-    }
+  .card {
+    max-width: 15vw;
+  }
 }
