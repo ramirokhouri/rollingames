@@ -71,9 +71,9 @@ const videojuegos_static = [
     categoria: "Plataforma",
     descripcion: "Lo mejor de la cultura pop. Vengan de a uno.",
     destacado: false,
-    img_card: "",
-    img_portada:
+    img_card:
       "https://i.pinimg.com/236x/74/c3/45/74c34539ce7c5ee4454e814893be6ac2.jpg",
+    img_portada: "",
     publicado: true,
   },
   {
@@ -256,7 +256,7 @@ const videojuegos_static = [
     id: 24,
     nombre: "Resident Evil 4",
     categoria: "Accion",
-    descripcion: "Un forastero!",
+    descripcion: "Un forastero",
     destacado: false,
     img_card:
       "https://i.pinimg.com/236x/95/7a/d0/957ad0520994147cb33c6aa1f50d0474.jpg",
@@ -270,6 +270,63 @@ function cargarJuegos() {
   localStorage.setItem("lista_videojuegos", JSON.stringify(videojuegos));
 }
 
-console.log("script.js");
-console.log(videojuegos_static);
 cargarJuegos();
+
+function listar_videojuegos() {
+  const videojuegos = JSON.parse(localStorage.getItem("lista_videojuegos"));
+  console.log(videojuegos);
+
+  const juegos_c1 = [];
+  const juegos_c2 = [];
+  const juegos_c3 = [];
+  const juegos_c4 = [];
+
+  for (juego of videojuegos) {
+    if (juego.categoria === "Plataforma") {
+      juegos_c1.push(juego);
+    }
+    document.getElementById("c1_categoria").innerText = "Plataforma";
+    if (juego.categoria === "Accion") {
+      juegos_c2.push(juego);
+    }
+    //document.getElementById("c2_categoria").innerText = "Accion";
+    if (juego.categoria === "FPS") {
+      juegos_c3.push(juego);
+    }
+    //document.getElementById("c3_categoria").innerText = "FPS";
+    if (juego.categoria === "Lucha") {
+      juegos_c4.push(juego);
+    }
+  }
+
+  let i = 1;
+  for (juego of juegos_c1) {
+    document.getElementById("c1_categoria").innerText = juego.categoria;
+    document.getElementById("c1_j" + i + "_img").src = juego.img_card;
+    document.getElementById("c1_j" + i + "_nombre").innerText = juego.nombre;
+    document.getElementById("c1_j" + i + "_desc").innerText = juego.descripcion;
+    i += 1;
+  }
+  i = 1;
+  for (juego of juegos_c2) {
+    console.log(juego.categoria);
+    console.log(juego.img_card);
+    console.log(juego.nombre);
+    console.log(juego.descripcion);
+    document.getElementById("c2_categoria").innerText = juego.categoria;
+    document.getElementById("c2_j" + i + "_img").src = juego.img_card;
+    document.getElementById("c2_j" + i + "_nombre").innerText = juego.nombre;
+    document.getElementById("c2_j" + i + "_desc").innerText = juego.descripcion;
+    i += 1;
+  }
+  i = 1;
+  for (juego of juegos_c3) {
+    document.getElementById("c3_categoria").innerText = juego.categoria;
+    document.getElementById("c3_j" + i + "_img").src = juego.img_card;
+    document.getElementById("c3_j" + i + "_nombre").innerText = juego.nombre;
+    document.getElementById("c3_j" + i + "_desc").innerText = juego.descripcion;
+    i += 1;
+  }
+}
+
+listar_videojuegos();

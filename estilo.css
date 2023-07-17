@@ -44,6 +44,6 @@ header {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .card {
-    max-width: 15vw;
+    max-width: 12vw;
   }
 }
