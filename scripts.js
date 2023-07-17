@@ -1,4 +1,4 @@
-export const videojuegos = [
+const videojuegos_static = [
   {
     id: 1,
     nombre: "Sunsetriders",
@@ -265,4 +265,11 @@ export const videojuegos = [
   },
 ];
 
-export { videojuegos };
+function cargarJuegos() {
+  let videojuegos = videojuegos_static;
+  localStorage.setItem("lista_videojuegos", JSON.stringify(videojuegos));
+}
+
+console.log("script.js");
+console.log(videojuegos_static);
+cargarJuegos();
