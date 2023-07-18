@@ -308,6 +308,14 @@ function listar_videojuegos() {
     i += 1;
   }
   i = 1;
+  for (juego of juegos_c3) {
+    document.getElementById("c3_categoria").innerText = juego.categoria;
+    document.getElementById("c3_j" + i + "_img").src = juego.img_card;
+    document.getElementById("c3_j" + i + "_nombre").innerText = juego.nombre;
+    document.getElementById("c3_j" + i + "_desc").innerText = juego.descripcion;
+    i += 1;
+  }
+  i = 1;
   for (juego of juegos_c2) {
     console.log(juego.categoria);
     console.log(juego.img_card);
@@ -320,11 +328,27 @@ function listar_videojuegos() {
     i += 1;
   }
   i = 1;
+  for (juego of juegos_c4) {
+    document.getElementById("c4_categoria").innerText = juego.categoria;
+    document.getElementById("c4_j" + i + "_img").src = juego.img_card;
+    document.getElementById("c4_j" + i + "_nombre").innerText = juego.nombre;
+    document.getElementById("c4_j" + i + "_desc").innerText = juego.descripcion;
+    i += 1;
+  }
+  i = 1;
   for (juego of juegos_c3) {
     document.getElementById("c3_categoria").innerText = juego.categoria;
     document.getElementById("c3_j" + i + "_img").src = juego.img_card;
     document.getElementById("c3_j" + i + "_nombre").innerText = juego.nombre;
     document.getElementById("c3_j" + i + "_desc").innerText = juego.descripcion;
+    i += 1;
+  }
+  i = 1;
+  for (juego of juegos_c4) {
+    document.getElementById("c4_categoria").innerText = juego.categoria;
+    document.getElementById("c4_j" + i + "_img").src = juego.img_card;
+    document.getElementById("c4_j" + i + "_nombre").innerText = juego.nombre;
+    document.getElementById("c4_j" + i + "_desc").innerText = juego.descripcion;
     i += 1;
   }
 }
