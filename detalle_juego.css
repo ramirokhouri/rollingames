@@ -1,0 +1,86 @@
+/*---------------------SECCION CONTACTO------------------------- */
+
+.seccion-contacto{
+    border-radius: 11px;
+    background: #23252B;
+    color: white;
+}
+
+/* --------------------SECCION DETALLE JUEGO-------------------- */
+
+
+.detalle-juego{
+    border-radius: 11px;
+    background: #23252B;
+}
+
+.nombre-juego {
+    font-weight: 700;
+}
+
+.titulo {
+    font-weight: 600;
+}
+.descripcion {
+    font-weight: 200;
+}
+
+.contenido {
+    padding: 30px;
+}
+
+
+/* --------------------SECCION DETALLE JUEGO-------------------- */
+
+
+body{
+    font-family: 'Prompt', sans-serif;
+    background-color: #15171E;
+    color:white;
+    padding: 80px;
+}
+/* --------------------SECCION NOSOTROS-------------------- */
+.conten-personas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap:20px;
+    padding: 30px;    
+}
+
+.descripcion-titulo {
+    text-align: center;
+}
+
+.container .seccion-nosotros{
+   border-radius: 11px;
+    background: #23252B;
+    padding: 30px;
+}
+.persona {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.persona img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: solid 5px #0F65F7;
+}
+.persona h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.persona p {
+    font-size: 16px;
+    text-align: center;
+}
+
+@media (max-width: 770px) {
+    body{
+        padding: 0;
+    }
+}
