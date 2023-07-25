@@ -20,10 +20,6 @@ header {
   object-fit: fill;
 }
 
-.container {
-  min-width: 85vw !important;
-}
-
 /* Bootstrap Breakpoints */
 /* Small devices (landscape phones, 576px and up) */
 /*
