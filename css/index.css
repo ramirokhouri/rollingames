@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  min-width: 75vw !important;
+  min-width: 60vw !important;
 }
 
 .card:hover {
@@ -24,7 +24,6 @@ a:visited,
 a:active {
   text-decoration: none;
 }
-
 /* Bootstrap Breakpoints */
 /* Small devices (landscape phones, 576px and up) */
 /*
