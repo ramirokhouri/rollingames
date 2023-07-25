@@ -10,7 +10,7 @@ function cargarJuegos() {
 
     // contenedor de categoría
     const contenido_categoria = document.createElement("div");
-    contenido_categoria.setAttribute("id", `category${genero}`);
+    contenido_categoria.setAttribute("id", `categoria_${genero}`);
     contenido_categoria.setAttribute("class", "row g-3");
 
     // botón mostrar género
@@ -23,8 +23,27 @@ function cargarJuegos() {
     grilla_juegos = grilla_juegos.filter((juego) =>
       juego.genre.includes(genero)
     );
-    // console.log(genero);
-    // console.log(grilla_juegos);
+
+    // grilla para cada género
+    grilla_juegos.forEach((juego, index) => {
+      let generos_str = juego.genre.join(", ");
+
+      let div = document.createElement("div");
+      div.setAttribute("class", "col-6 col-md-3 col-lg-2");
+      let contenido_card = `<div class="card text-bg-dark">
+      <a class="juego" onclick="mostrarDetalles(${index})" href="#">
+      <img src="${juego.poster}" class="card-img-top" alt="">
+      <div class="card-body p-1">
+      <h5 title="${juego.title}" class="card-title">${juego.title}</h5>
+      <p class="card-text genero">${generos_str}</p>
+      <p class="card-text">$${juego.price || 59.99}</p>
+      </div>
+      `;
+      div.innerHTML = contenido_card;
+
+      let contenido_categoria_ = document.getElementById(`categoria_${genero}`);
+      contenido_categoria_.appendChild(div);
+    });
   });
 }
 
