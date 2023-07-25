@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario de Validación</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<style>
+  input:invalid {
+    border: 1px solid blue;
+  }
+
+  input:valid {
+    border: 1px solid green;
+  }
+</style>
+
+<body class=" text-bg-dark p-3">
+  <h1 class=" text-center">Formulario de Validación</h1>
+ <br>
+  <p class="text-bg-dark text-center">  Completa el formulario y te enviamos un correo electrónico para poder verificar tu cuenta desde allí. </p>
+  
+  <main class="container-fluid r" style="width: 100%;">
+    <div class="row justify-content-md-center ">
+        <div class="col-md-8 col-xs-12 mt-4 text-center">
+            <form class="p-4" method="post" novalidate>   
+
+     <input type="email" id="destino" placeholder="Email" style="width: 300px" required /><br />
+    <input type="text" id="nombre" placeholder="Nombre" style="width: 300px" required /><br />
+    <input type="text" id="asunto" placeholder="Asunto" style="width: 300px" required /><br />
+    <input type="text" id="mensaje" placeholder="mensaje" style="width: 300px" required /><br />
+    <button type="submit" class="btn btn-secondary btn-sm "> Enviar mail </button>
+   
+  </form>
+  <p><a class="link-opacity-100" href="#">Volver al Inicio</a></p>
+</div>
+</div>
+</main>
+
+
+  <script>
+    const API_URL = "http://pad19.com:3050/mail";
+    const formulario = document.querySelector('form');
+
+    formulario.addEventListener('submit', event => {
+      event.preventDefault();
+      if (formulario.checkValidity()) enviarMail()
+    })
+
+    const enviarMail = async (event) => {
+      try {
+        const Email = document.getElementById('Email');
+        const Nombre = document.getElementById('Nombre');
+        const asunto = document.getElementById('asunto');
+        const mensaje = document.getElementById('mensaje');
+
+        const mail = {
+          para: destino.value,
+          asunto: asunto.value,
+          cuerpo: `
+                    <h3>Datos del formulario</h3>
+                    <ul>
+                      <li>Nombre: ${nombre.value}</li>
+                      <li>Consulta: ${mensaje.value}</li>
+                    </ul>
+                  `,
+        };
+
+        const opciones = {
+          method: "POST",
+          headers: { "Content-Type": "application/json; charset=UTF-8" },
+          body: JSON.stringify(mail),
+        };
+
+        const envio = await fetch(API_URL, opciones);
+        const envioJson = await envio.json();
+        console.log(envioJson);
+      } catch (err) {
+        console.log(err.message);
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+
+</html>
