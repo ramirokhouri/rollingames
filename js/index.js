@@ -23,6 +23,7 @@ function cargarJuegos() {
     grilla_juegos = grilla_juegos.filter((juego) =>
       juego.genre.includes(genero)
     );
+    grilla_juegos = grilla_juegos.sort(() => Math.random() - 0.5).slice(0, 12);
 
     // grilla para cada género
     grilla_juegos.forEach((juego, index) => {
