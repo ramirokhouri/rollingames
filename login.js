@@ -62,7 +62,7 @@ function ocultarMensaje () {
 function cargarUsuarios() {
     const usuarios = [
         { email: 'valelu.muratore@gmail.com', clave: 'vale123' },
-        { email: 'admnistracion@gmail.com', clave: 'adm123' },
+        { email: 'administracion@gmail.com', clave: 'adm123' },
      
     ];
     localStorage.setItem('lista_usuarios', JSON.stringify(usuarios)); }
