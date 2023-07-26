@@ -6,24 +6,24 @@ header {
   background-size: cover;
 }
 
-.card {
-  max-width: 45vw;
-}
-
-.card:hover {
-  filter: contrast(75%);
-}
-
-.card img {
-  width: 100%;
-  height: 25vh;
-  object-fit: fill;
+body {
+  background-color: #15171e !important;
 }
 
 .container {
-  min-width: 85vw !important;
+  min-width: 60vw !important;
 }
 
+.card:hover {
+  filter: contrast(85%);
+}
+
+.card a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
 /* Bootstrap Breakpoints */
 /* Small devices (landscape phones, 576px and up) */
 /*
@@ -44,6 +44,6 @@ header {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .card {
-    max-width: 15vw;
+    max-width: 12vw;
   }
 }
