@@ -17,13 +17,14 @@
         <div class="row justify-content-md-center">
             <div class="col-md-8 col-xs-12 mt-4">
                 <h2 class="mb-4"><b>Estás viendo el contenido privado</b></h2>
-               
+
             </div>
         </div>
 
         <div class="row justify-content-md-center text-center">
             <div class="col-md-8 col-xs-12 mt-4">
-                <button id="salir" class="btn btn-success "><i class="fas fa-sign-in-alt"></i> Volver al inicio </button>
+                <button id="salir" class="btn btn-success "><i class="fas fa-sign-in-alt"></i> Volver al inicio
+                </button>
             </div>
         </div>
 
@@ -37,7 +38,7 @@
         const salir = document.getElementById('salir');
 
         // Recordar que podemos utilizar también la notación de flecha (arrow) para las funciones
-        const verificar_estado = () =>  {
+        const verificar_estado = () => {
             // recuperamos la marca de estado desde sessionStorage, si no se encuentra retornamos false
             const estado_usuario = sessionStorage.getItem('estado_usuario') || false;
             // Si es false, volvemos al login
