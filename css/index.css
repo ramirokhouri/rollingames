@@ -8,10 +8,10 @@ body {
   margin-top: 60px;
   width: 100%;
 }
-.container-header{
+.container-header {
   margin-top: 68px;
 }
-.title-carrusel{
+.title-carrusel {
   display: flex;
   color: white;
   font-size: 1.5em;
@@ -19,23 +19,23 @@ body {
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.8);
 }
-.icono-destacado{
+.icono-destacado {
   padding: 10px;
   height: 45px;
   border-radius: 40px;
 }
-.carousel-item{
+.carousel-item {
   height: 550px;
 }
-.carouselBanner{
+.carouselBanner {
   height: 100%;
   object-fit: cover;
 }
-.carouselLogo{
+.carouselLogo {
   z-index: 2;
   position: absolute;
   object-fit: contain;
-  left: 25%;  
+  left: 25%;
   width: 50%;
   height: 300px;
 }
@@ -44,10 +44,9 @@ body {
   width: 20vw;
 }
 
-.gamePoster{
+.gamePoster {
   display: none;
 }
-
 
 /* Categorías */
 .container-juegos {
@@ -58,7 +57,7 @@ body {
   filter: contrast(85%);
 }
 
-.card a,
+a,
 a:link,
 a:visited,
 a:active {
