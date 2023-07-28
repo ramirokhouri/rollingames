@@ -14,7 +14,7 @@ function cargarJuegos() {
     contenido_categoria.setAttribute("class", "row g-3 mt-3 mb-3");
 
     // botón mostrar género
-    h1.innerHTML = `${genero} <button type="button" class="btn btn-primary" onclick="mostrarGenero(${index})">Ver más</button>`;
+    h1.innerHTML = `${genero} <button type="button" class="btn btn-primary" onclick="mostrarCategoria(${index})">Ver más</button>`;
     categorias_container.appendChild(h1);
     categorias_container.appendChild(contenido_categoria);
 
@@ -49,15 +49,14 @@ function cargarJuegos() {
   });
 }
 
-function cargarCarrusel(){
-  let destacados = videojuegos.filter((juego)=> juego.featured == true);
+function cargarCarrusel() {
+  let destacados = videojuegos.filter((juego) => juego.featured == true);
   destacados = destacados.filter((juego) => juego.published == true);
 
   destacados.forEach((juego, index) => {
-
-    let div = document.createElement('div')
-    div.setAttribute("class","carousel-item") 
-    div.innerHTML=`
+    let div = document.createElement("div");
+    div.setAttribute("class", "carousel-item");
+    div.innerHTML = `
     <a class="game gamePoster" onclick="mostrarDetalles(${index})" href="#">
     <img src="${juego.poster}" class="d-block w-100 carouselBanner" alt="${juego.title}" />
     </a>
@@ -71,29 +70,34 @@ function cargarCarrusel(){
     <div class="carousel-caption">
       <p class="text-center">${juego.description}</p>
       <button type="button" class="btn btn-danger btn-sm" onclick="mostrarDetalles(${juego.id})" href="#">See More</button>
-    </div>`
+    </div>`;
     // <div class="d-block d-md-none">
     // <button type="button" class="btn btn-danger btn-sm" onclick="mostrarDetalles(${index})" href="./pages/gameDetails.html?gameID=${juego.id}">See More</button>
     // </div>`
-    document.getElementsByClassName("carousel-inner")[0].appendChild(div)
-    document.getElementsByClassName("carousel-item")[0].setAttribute("class","carousel-item active")
+    document.getElementsByClassName("carousel-inner")[0].appendChild(div);
+    document
+      .getElementsByClassName("carousel-item")[0]
+      .setAttribute("class", "carousel-item active");
 
-    let button=document.createElement('button')
-    button.setAttribute("type","button")
-    button.setAttribute("class","botonCarousel")
-    button.setAttribute("data-bs-target","#carouselExampleCaptions")
-    button.setAttribute("data-bs-slide-to",`${index}`)
-    button.setAttribute("aria-current","true")
-    button.setAttribute("aria-label",`Slide ${index+1}`)
-    document.getElementsByClassName("carousel-indicators")[0].appendChild(button)
-    document.getElementsByClassName("botonCarousel")[0].setAttribute("class","botonCarousel active")
-
+    let button = document.createElement("button");
+    button.setAttribute("type", "button");
+    button.setAttribute("class", "botonCarousel");
+    button.setAttribute("data-bs-target", "#carouselExampleCaptions");
+    button.setAttribute("data-bs-slide-to", `${index}`);
+    button.setAttribute("aria-current", "true");
+    button.setAttribute("aria-label", `Slide ${index + 1}`);
+    document
+      .getElementsByClassName("carousel-indicators")[0]
+      .appendChild(button);
+    document
+      .getElementsByClassName("botonCarousel")[0]
+      .setAttribute("class", "botonCarousel active");
   });
-
 }
 
-
+function mostrarCategoria(genero) {
+  window.location.href = `./html/categoria.html?genero=${generos[genero]}`;
+}
 
 cargarJuegos();
 cargarCarrusel();
-
