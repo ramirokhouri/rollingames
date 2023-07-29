@@ -23,7 +23,7 @@ let listaJuegos = [
     icon: "https://cdn.cloudflare.steamstatic.com/steam/apps/952060/capsule_231x87.jpg",
     price: "59.99",
     published: true,
-    featured: false,
+    featured: true,
   },
   {
     id: 2,
@@ -49,7 +49,7 @@ let listaJuegos = [
     icon: "https://cdn.cloudflare.steamstatic.com/steam/apps/1384160/capsule_231x87.jpg",
     price: "59.99",
     published: true,
-    featured: true,
+    featured: false,
   },
   {
     id: 3,
@@ -334,7 +334,7 @@ let listaJuegos = [
     icon: "https://cdn.cloudflare.steamstatic.com/steam/apps/367520/capsule_231x87.jpg",
     price: "59.99",
     published: true,
-    featured: false,
+    featured: true,
   },
   {
     id: 14,
@@ -386,7 +386,7 @@ let listaJuegos = [
     icon: "https://cdn.cloudflare.steamstatic.com/steam/apps/1196590/capsule_231x87.jpg",
     price: "59.99",
     published: true,
-    featured: true,
+    featured: false,
   },
   {
     id: 16,
@@ -542,7 +542,7 @@ let listaJuegos = [
     icon: "https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/capsule_231x87.jpg",
     price: "59.99",
     published: true,
-    featured: false,
+    featured: true,
   },
   {
     id: 22,
@@ -568,7 +568,7 @@ let listaJuegos = [
     icon: "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/capsule_231x87.jpg",
     price: "59.99",
     published: true,
-    featured: false,
+    featured: true,
   },
   {
     id: 24,
@@ -620,7 +620,7 @@ let listaJuegos = [
     icon: "https://cdn.cloudflare.steamstatic.com/steam/apps/601150/capsule_231x87.jpg",
     price: "59.99",
     published: true,
-    featured: true,
+    featured: false,
   },
   {
     id: 26,

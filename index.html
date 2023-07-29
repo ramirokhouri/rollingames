@@ -17,45 +17,48 @@
     <!--navbar-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">🎮 Rolling Games</a>
+        <a class="navbar-brand" href="./index.html">🎮 Rolling Games</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Categorías
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Categoría 1</a></li>
-                <li><a class="dropdown-item" href="#">Categoría 2</a></li>
-                <li><a class="dropdown-item" href="#">Categoría 3</a></li>
-                <li><a class="dropdown-item" href="#">Categoría 4</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="ul_categorias">
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+          <form class="d-flex m-1" role="login">
+            <button class="btn btn-primary" type="submit"><a class="text-light" href="./html/login.html">Iniciar
+                Sesión</a></button>
+          </form>
+          <form class="d-flex m-1" role="register">
+            <button class="btn btn-danger" type="submit"><a class="text-light"
+                href="./html/login.html">Registrarse</a></button>
           </form>
         </div>
       </div>
     </nav>
     <!--header-->
-    <header class="d-flex justify-content-around align-items-center">
-      <h1>🎮 Rolling Games 🎮</h1>
+    <header class="container-header d-flex justify-content-center">
+      <div class="container-carrusel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+          </div>
+          <div class="carousel-inner" id="carousel-inner">
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </header>
     <!--contenido principal-->
-    <main class="container mt-3">
+    <main class="container container-juegos mt-3">
       <div class="row">
         <!-- Container de categorías, aquí se listarán los juegos -->
         <div class="col" id="categorias_container">
@@ -74,6 +77,7 @@
   <!-- Custom JS -->
   <script src="./js/videojuegos.js"></script>
   <script src="./js/index.js"></script>
+  <script src="./js/categoria.js"></script>
 </body>
 
 </html>
