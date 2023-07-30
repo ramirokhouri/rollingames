@@ -22,6 +22,12 @@ function cargarJuego(){
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
+                <video controls autoplay class="d-block w-100">
+                    <source src="${juego.video}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="carousel-item">
             <img src="${juego.screenshot1}" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
@@ -44,7 +50,7 @@ function cargarJuego(){
     juego_container.appendChild(div);
 
     let div_contenido = document.createElement("div");
-    div_contenido.setAttribute("class", "contenido");
+    div_contenido.setAttribute("class", "contenido text-center");
     div_contenido.innerHTML = `
     <img src="${juego.icon}">
     <h1 class="nombre-juego display-5 pt-3">${juego.title}</h1>
