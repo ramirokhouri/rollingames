@@ -20,19 +20,19 @@ function cargarCarrusel() {
     let div = document.createElement("div");
     div.setAttribute("class", "carousel-item");
     div.innerHTML = `
-    <a class="game gamePoster" onclick="mostrarDetalles(${index})" href="#">
+    <a class="game gamePoster" onclick="mostrarDetalles(${juego.id})" href="#">
     <img src="${juego.poster}" class="d-block w-100 carouselBanner" alt="${juego.title}" />
     </a>
-    <a class="game gameLogo" onclick="mostrarDetalles(${index})" href="#">
+    <a class="game gameLogo" onclick="mostrarDetalles(${juego.id})" href="#">
     <img src="${juego.logo}" class="carouselLogo" alt="" srcset="">
     </a>
-    <a class="game gameBanner" onclick="mostrarDetalles(${index})" href="#">
+    <a class="game gameBanner" onclick="mostrarDetalles(${juego.id})" href="#">
     <img src="${juego.banner}" class="d-block w-100 carouselBanner" alt="${juego.title}" />
     </a>  
     
     <div class="carousel-caption">
       <p class="text-center">${juego.description}</p>
-      <button type="button" class="btn btn-danger btn-sm" onclick="mostrarDetalles(${juego.id})" href="#">See More</button>
+      <button type="button" class="btn btn-primary btn-sm" onclick="mostrarDetalles(${juego.id})" href="#">Ver más</button>
     </div>`;
     // <div class="d-block d-md-none">
     // <button type="button" class="btn btn-danger btn-sm" onclick="mostrarDetalles(${index})" href="./pages/gameDetails.html?gameID=${juego.id}">See More</button>
