@@ -29,7 +29,7 @@ function cargarJuegos() {
     let div = document.createElement("div");
     div.setAttribute("class", "col-6 col-md-3 col-lg-2 d-flex");
     let contenido_card = `<div class="card text-bg-dark flex-fill border-dark">
-    <a class="text-light" onclick="mostrarDetalles(${index})" href="#">
+    <a class="text-light" onclick="mostrarDetalles(${juego.id})" href="./detalle_juego.html?juegoID=${juego.id}">
     <img src="${juego.poster}" class="card-img-top" alt="">
     <div class="card-body p-1">
     <h5 title="${juego.title}" class="card-title">${juego.title}</h5>
@@ -53,6 +53,10 @@ function cargarCategorias_nav() {
     li.innerHTML = `<a class="nav-link active" aria-current="page" href="${`./categoria.html?genero=${genero}`}">${genero}</a>`;
     ul_categorias.appendChild(li);
   });
+}
+
+function mostrarDetalles(juego_id) {
+  window.location.href = `./detalle_juego.html?juegoID=${juego_id}`;
 }
 
 cargarJuegos();
