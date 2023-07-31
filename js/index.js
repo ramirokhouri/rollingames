@@ -1,4 +1,5 @@
 const videojuegos = JSON.parse(localStorage.getItem("juegos")) || [];
+const usuario_logueado = JSON.parse(localStorage.getItem("usuario_logueado")) || [];
 const generos = ["Accion", "Aventura", "FPS", "Lucha", "RPG", "Disparos"];
 const categorias_container = document.getElementById("categorias_container");
 

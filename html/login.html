@@ -33,13 +33,32 @@
 
 </html>
 
-
-
-
 <body class=" text-bg-dark p-3">
 
     <main class="container-fluid r" style="width: 100%;">
-        <div class="row justify-content-md-center ">
+                        <!--navbar-->
+                        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+                            <div class="container-fluid">
+                              <a class="navbar-brand" href="../index.html">🎮 Rolling Games</a>
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="ul_categorias">
+                                </ul>
+                                <form class="d-flex m-1" role="login">
+                                  <button class="btn btn-primary" type="submit"><a class="text-light" href="./login.html">Iniciar
+                                      Sesión</a></button>
+                                </form>
+                                <form class="d-flex m-1" role="register">
+                                  <button class="btn btn-danger" type="submit"><a class="text-light"
+                                      href="./suscripcion.html">Registrarse</a></button>
+                                </form>
+                              </div>
+                            </div>
+                        </nav>
+        <div class="row justify-content-md-center mt-5">
             <div class="col-md-8 col-xs-12 mt-4 text-center">
                 <h2 class="mb-4 text-center "><b>Formulario de Login</b></h2>
 
@@ -86,7 +105,7 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
 
-    <script type="module" src="./js/login.js"></script>
+    <script type="module" src="../js/login.js"></script>
 
 
 </body>

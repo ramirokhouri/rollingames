@@ -30,9 +30,9 @@ formulario.addEventListener("submit", function (event) {
         JSON.stringify(usuario_logueado)
       );
       if (usuario_logueado.rol === "admin") {
-        window.location.href = "./privada.html";
+        window.location.href = "../html/admin.html";
       } else {
-        window.location.href = "./index.html";
+        window.location.href = "../index.html";
       }
     } else {
       mensaje_estado.innerHTML = "Error en email y/o clave";
@@ -64,11 +64,25 @@ function ocultarMensaje() {
 
 function cargarUsuarios() {
   const usuarios = [
-    { email: "mail@mail.com", clave: "123456", rol: "user" },
-    { email: "valelu.muratore@gmail.com", clave: "vale123", rol: "user" },
-    { email: "administracion@gmail.com", clave: "adm123", rol: "admin" },
+    { email: "mail@mail.com", clave: "123456", rol: "user", nombre:"fede" },
+    { email: "valelu.muratore@gmail.com", clave: "vale123", rol: "user", nombre: "vale" },
+    { email: "administracion@gmail.com", clave: "adm123", rol: "admin", nombre: "admin" },
+    { email: "admin@mail.com", clave: "123456", rol: "admin", nombre: "admin" },
   ];
   localStorage.setItem("lista_usuarios", JSON.stringify(usuarios));
 }
 
 cargarUsuarios();
+
+function cargarCategorias_nav() {
+  const ul_categorias = document.getElementById("ul_categorias");
+  const generos = ["Accion", "Aventura", "FPS", "Lucha", "RPG", "Disparos"];
+  generos.forEach((genero, index) => {
+    const li = document.createElement("li");
+    li.setAttribute("class", "nav-item");
+    li.innerHTML = `<a class="nav-link active" aria-current="page" href="${`./categoria.html?genero=${genero}`}">${genero}</a>`;
+    ul_categorias.appendChild(li);
+  });
+}
+
+cargarCategorias_nav();
