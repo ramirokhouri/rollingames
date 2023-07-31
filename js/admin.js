@@ -46,8 +46,7 @@ function destacado(juego_id, n) {
 }
 
 function borrarJuego(i){
-    let confirmar = confirm("Desea borrar el juego?");
-    if(confirmar) {
+    if(confirm("Desea borrar el juego?")) {
         videojuegos.splice(i,1);
         localStorage.setItem("juegos", JSON.stringify(videojuegos));
     }
@@ -57,13 +56,3 @@ function borrarJuego(i){
 
 cargarCategorias_nav();
 cargarJuegos();
-/*
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>Mark</td>
-                <td>Otto</td>                
-              </tr>
-*/
