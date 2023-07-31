@@ -3,21 +3,6 @@ const generos = ["Accion", "Aventura", "FPS", "Lucha", "RPG", "Disparos"];
 const admin_container = document.getElementById("admin-container");
 const tabla_juegos = document.getElementById("tabla-juegos");
 
-function destacado(juego_id, n) {
-    let juego = videojuegos.find((juego) => juego.id == juego_id );
-    console.log("featured antes: " + juego.featured);
-    n === 1 ? juego.featured = true : juego.featured = false;
-    console.log("featured después: " + juego.featured);
-    localStorage.setItem("juegos", JSON.stringify(videojuegos));
-    
-}
-
-function borrarJuego(i){
-    videojuegos.splice(i,1);
-    localStorage.setItem("juegos", JSON.stringify(videojuegos));
-    cargarJuegos();
-}
-
 function cargarCategorias_nav() {
     const ul_categorias = document.getElementById("ul_categorias");
     generos.forEach((genero, index) => {
@@ -61,8 +46,11 @@ function destacado(juego_id, n) {
 }
 
 function borrarJuego(i){
-    videojuegos.splice(i,1);
-    localStorage.setItem("juegos", JSON.stringify(videojuegos));
+    let confirmar = confirm("Desea borrar el juego?");
+    if(confirmar) {
+        videojuegos.splice(i,1);
+        localStorage.setItem("juegos", JSON.stringify(videojuegos));
+    }
     cargarJuegos();
     window.location.reload();
 }
