@@ -49,10 +49,9 @@ function cargarUsuarios() {
 }
 
 nombre.addEventListener("invalid", function (event){
-event.defaultPrevented();
+event.preventDefault();
 mensaje.innerText = "Solo texto"
 mensaje.style.display = "block"
-
-})
+});
 
 cargarUsuarios();

@@ -30,9 +30,9 @@ formulario.addEventListener("submit", function (event) {
         JSON.stringify(usuario_logueado)
       );
       if (usuario_logueado.rol === "admin") {
-        window.location.href = "./privada.html";
+        window.location.href = "../html/admin.html";
       } else {
-        window.location.href = "./index.html";
+        window.location.href = "../index.html";
       }
     } else {
       mensaje_estado.innerHTML = "Error en email y/o clave";
@@ -64,9 +64,10 @@ function ocultarMensaje() {
 
 function cargarUsuarios() {
   const usuarios = [
-    { email: "mail@mail.com", clave: "123456", rol: "user" },
-    { email: "valelu.muratore@gmail.com", clave: "vale123", rol: "user" },
-    { email: "administracion@gmail.com", clave: "adm123", rol: "admin" },
+    { email: "mail@mail.com", clave: "123456", rol: "user", nombre:"fede" },
+    { email: "valelu.muratore@gmail.com", clave: "vale123", rol: "user", nombre: "vale" },
+    { email: "administracion@gmail.com", clave: "adm123", rol: "admin", nombre: "admin" },
+    { email: "admin@mail.com", clave: "123456", rol: "admin", nombre: "admin" },
   ];
   localStorage.setItem("lista_usuarios", JSON.stringify(usuarios));
 }
