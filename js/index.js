@@ -11,12 +11,6 @@ function cargarCategorias_nav() {
     li.innerHTML = `<a class="nav-link active" aria-current="page" href="${`./html/categoria.html?genero=${genero}`}">${genero}</a>`;
     ul_categorias.appendChild(li);
   });
-  if (usuario_logueado) {
-    const ul_usuario = document.getElementById("ul_usuario");
-    const li_usuario = document.createElement("li");
-    li_usuario.innerHTML = `Hola, ${usuario_logueado.nombre}`;
-    ul_usuario.appendChild(li_usuario);
-  }
 }
 
 function cargarCarrusel() {
