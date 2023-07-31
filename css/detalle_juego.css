@@ -12,8 +12,13 @@
 .detalle-juego{
     border-radius: 11px;
     background: #23252B;
-    margin-top: 1vh;
 }
+
+@media (max-width: 768px) {
+    .detalle-juego {
+        margin-top: 65px;
+    }
+  }
 
 .nombre-juego {
     font-weight: 700;
