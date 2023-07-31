@@ -30,7 +30,7 @@ formulario.addEventListener("submit", function (event) {
         JSON.stringify(usuario_logueado)
       );
       if (usuario_logueado.rol === "admin") {
-        window.location.href = "../html/admin.html";
+        window.location.href = "./html/admin.html";
       } else {
         window.location.href = "../index.html";
       }

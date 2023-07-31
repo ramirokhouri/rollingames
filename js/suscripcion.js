@@ -4,28 +4,30 @@ const clave = document.getElementById("clave");
 const nombre = document.getElementById("nombre");
 
 const mensaje_estado = document.getElementById("mensaje_estado");
+
     
-formulario.addEventListener("submit", function (event) {
-  event.preventDefault();
+    formulario.addEventListener("submit", function (event) {
+      event.preventDefault();
+    
+      const emailInput = document.getElementById("email");
+      const claveInput = document.getElementById("clave");
+      const nombreInput = document.getElementById("nombre");
+    
+      if (formulario.checkValidity()) {
+        const lista_usuarios = recuperarUsuarios();
+        const usuario = {
+          email: emailInput.value,
+          clave: claveInput.value,
+          rol: "user",
+          nombre: nombreInput.value
+        };
+        lista_usuarios.push(usuario);
+        localStorage.setItem("lista_usuarios", JSON.stringify(lista_usuarios));
+      }
+    });
 
-  const emailInput = document.getElementById("email");
-  const claveInput = document.getElementById("clave");
-  const nombreInput = document.getElementById("nombre");
 
-  if (formulario.checkValidity()) {
-    const lista_usuarios = recuperarUsuarios();
-    const usuario = {
-      email: emailInput.value,
-      clave: claveInput.value,
-      rol: "user",
-      nombre: nombreInput.value
-    };
-    lista_usuarios.push(usuario);
-    localStorage.setItem("lista_usuarios", JSON.stringify(lista_usuarios));
-  }
-  window.location.href = "./login.html";
-});
-
+    
 function recuperarUsuarios() {
   return JSON.parse(localStorage.getItem("lista_usuarios")) || [];
 }
@@ -47,22 +49,10 @@ function cargarUsuarios() {
 }
 
 nombre.addEventListener("invalid", function (event){
-event.preventDefault();
+event.defaultPrevented();
 mensaje.innerText = "Solo texto"
 mensaje.style.display = "block"
-});
+
+})
 
 cargarUsuarios();
-
-function cargarCategorias_nav() {
-  const ul_categorias = document.getElementById("ul_categorias");
-  const generos = ["Accion", "Aventura", "FPS", "Lucha", "RPG", "Disparos"];
-  generos.forEach((genero, index) => {
-    const li = document.createElement("li");
-    li.setAttribute("class", "nav-item");
-    li.innerHTML = `<a class="nav-link active" aria-current="page" href="${`./categoria.html?genero=${genero}`}">${genero}</a>`;
-    ul_categorias.appendChild(li);
-  });
-}
-
-cargarCategorias_nav();
