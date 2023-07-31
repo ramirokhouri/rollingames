@@ -48,4 +48,11 @@ function cargarUsuarios() {
   localStorage.setItem("lista_usuarios", JSON.stringify(usuarios));
 }
 
+nombre.addEventListener("invalid", function (event){
+event.defaultPrevented();
+mensaje.innerText = "Solo texto"
+mensaje.style.display = "block"
+
+})
+
 cargarUsuarios();
