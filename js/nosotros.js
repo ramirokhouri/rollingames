@@ -1,6 +1,6 @@
 function cargarCategorias_nav() {
     const ul_categorias = document.getElementById("ul_categorias");
-    const generos = ["Accion", "Aventura", "FPS", "Lucha", "RPG", "Disparos"];
+    const generos = ["Action", "Adventure", "FPS", "Fighting", "RPG", "Shooting"];
     generos.forEach((genero, index) => {
       const li = document.createElement("li");
       li.setAttribute("class", "nav-item");

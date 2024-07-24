@@ -2,7 +2,7 @@ let listaJuegos = [
   {
     id: 1,
     title: "Resident Evil 3",
-    genre: ["Accion", "Disparos"],
+    genre: ["Action", "Shooting"],
     description:
       "Jill Valentine is one of the last remaining people in Raccoon City to witness the atrocities Umbrella performed. To stop her, Umbrella unleashes their ultimate secret weapon: Nemesis! Also includes Resident Evil Resistance, a new 1 vs 4 online multiplayer game set in the Resident Evil universe.",
     developer: "CAPCOM Co., Ltd.",
@@ -28,9 +28,9 @@ let listaJuegos = [
   {
     id: 2,
     title: "GUILTY GEAR -STRIVE-",
-    genre: ["Lucha"],
+    genre: ["Fighting"],
     description:
-      "The cutting-edge 2D/3D hybrid graphics pioneered in the Guilty Gear series have been raised to the next level in “GUILTY GEAR -STRIVE-“. The new artistic direction and improved character animations will go beyond anything you’ve seen before in a Lucha game!",
+      "The cutting-edge 2D/3D hybrid graphics pioneered in the Guilty Gear series have been raised to the next level in “GUILTY GEAR -STRIVE-“. The new artistic direction and improved character animations will go beyond anything you’ve seen before in a Fighting game!",
     developer: "Arc System Works",
     release_date: "11 Jun. 2021",
     poster:
@@ -54,9 +54,9 @@ let listaJuegos = [
   {
     id: 3,
     title: "ELDEN RING",
-    genre: ["Accion", "RPG"],
+    genre: ["Action", "RPG"],
     description:
-      "THE NEW FANTASY Accion RPG. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.",
+      "THE NEW FANTASY Action RPG. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.",
     developer: "FromSoftware Inc.",
     release_date: "24 Feb, 2022",
     poster:
@@ -80,9 +80,9 @@ let listaJuegos = [
   {
     id: 4,
     title: "Half-Life 2",
-    genre: ["Accion", "Disparos", "FPS"],
+    genre: ["Action", "Shooting", "FPS"],
     description:
-      '1998. HALF-LIFE sends a shock through the game industry with its combination of pounding Accion and continuous, immersive storytelling. Valve\'s debut title wins more than 50 game-of-the-year awards on its way to being named "Best PC Game Ever" by PC Gamer, and launches a franchise with more than eight million retail units sold worldwide.',
+      '1998. HALF-LIFE sends a shock through the game industry with its combination of pounding Action and continuous, immersive storytelling. Valve\'s debut title wins more than 50 game-of-the-year awards on its way to being named "Best PC Game Ever" by PC Gamer, and launches a franchise with more than eight million retail units sold worldwide.',
     developer: "Valve",
     release_date: "16 Nov, 2004",
     poster:
@@ -105,7 +105,7 @@ let listaJuegos = [
   {
     id: 5,
     title: "ACE COMBAT™ 7: SKIES UNKNOWN",
-    genre: ["Accion", "Simulation"],
+    genre: ["Action", "Simulation"],
     description:
       "Become an ace pilot and soar through photorealistic skies with full 360 degree movement; down enemy aircraft and experience the thrill of engaging in realistic sorties! Aerial combat has never looked or felt better!",
     developer: "Bandai Namco Studios Inc.",
@@ -131,7 +131,7 @@ let listaJuegos = [
   {
     id: 6,
     title: "DEATH STRANDING",
-    genre: ["Accion", "Aventura"],
+    genre: ["Action", "Adventure"],
     description:
       "From legendary game creator Hideo Kojima comes an all-new, genre-defying experience. Sam Bridges must brave a world utterly transformed by the Death Stranding. Carrying the disconnected remnants of our future in his hands, he embarks on a journey to reconnect the shattered world one step at a time.",
     developer: "KOJIMA PRODUCTIONS",
@@ -157,7 +157,7 @@ let listaJuegos = [
   {
     id: 7,
     title: "DARK SOULS™ III",
-    genre: ["Accion"],
+    genre: ["Action"],
     description:
       "Dark Souls continues to push the boundaries with the latest, ambitious chapter in the critically-acclaimed and genre-defining series. Prepare yourself and Embrace The Darkness!",
     developer: "FromSoftware, Inc.",
@@ -183,7 +183,7 @@ let listaJuegos = [
   {
     id: 8,
     title: "DRAGON BALL FighterZ",
-    genre: ["Accion", "Lucha"],
+    genre: ["Action", "Fighting"],
     description:
       "DRAGON BALL FighterZ is born from what makes the DRAGON BALL series so loved and famous: endless spectacular fights with its all-powerful fighters.",
     developer: "Arc System Works",
@@ -209,7 +209,7 @@ let listaJuegos = [
   {
     id: 9,
     title: "DOOM",
-    genre: ["Accion", "Disparos", "FPS"],
+    genre: ["Action", "Shooting", "FPS"],
     description:
       "Now includes all three premium DLC packs (Unto the Evil, Hell Followed, and Bloodfall), maps, modes, and weapons, as well as all feature updates including Arcade Mode, Photo Mode, and the latest Update 6.66, which brings further multiplayer improvements as well as revamps multiplayer progression.",
     developer: "id Software",
@@ -235,7 +235,7 @@ let listaJuegos = [
   {
     id: 10,
     title: "THE KING OF FIGHTERS XV",
-    genre: ["Accion", "Lucha"],
+    genre: ["Action", "Fighting"],
     description:
       "SHATTER ALL EXPECTATIONS! Transcend beyond your limits with KOF XV!",
     developer: "SNK CORPORATION",
@@ -261,7 +261,7 @@ let listaJuegos = [
   {
     id: 11,
     title: "HITMAN 3",
-    genre: ["Accion", "Aventura"],
+    genre: ["Action", "Adventure"],
     description:
       "Death Awaits. Agent 47 returns in HITMAN 3, the dramatic conclusion to the World of Assassination trilogy.",
     developer: "IO Interactive A/S",
@@ -287,9 +287,9 @@ let listaJuegos = [
   {
     id: 12,
     title: "Nioh 2 – The Complete Edition",
-    genre: ["Accion", "RPG"],
+    genre: ["Action", "RPG"],
     description:
-      "Battle hordes of yokai in this masocore Accion RPG. Create your protagonist and embark on an Aventura through a myriad of locales across Japan during the Sengoku period. Utilize the new Yokai Shift ability to defeat even the most ferocious yokai and be prepared to brave through Dark Realms created by your enemies.",
+      "Battle hordes of yokai in this masocore Action RPG. Create your protagonist and embark on an Adventure through a myriad of locales across Japan during the Sengoku period. Utilize the new Yokai Shift ability to defeat even the most ferocious yokai and be prepared to brave through Dark Realms created by your enemies.",
     developer: "KOEI TECMO GAMES CO., LTD.",
     release_date: "5 Feb, 2021",
     poster:
@@ -313,9 +313,9 @@ let listaJuegos = [
   {
     id: 13,
     title: "Hollow Knight",
-    genre: ["Accion", "Aventura", "Indie"],
+    genre: ["Action", "Adventure", "Indie"],
     description:
-      "Forge your own path in Hollow Knight! An epic Accion Aventura through a vast ruined kingdom of insects and heroes. Explore twisting caverns, battle tainted creatures and befriend bizarre bugs, all in a classic, hand-drawn 2D style.",
+      "Forge your own path in Hollow Knight! An epic Action Adventure through a vast ruined kingdom of insects and heroes. Explore twisting caverns, battle tainted creatures and befriend bizarre bugs, all in a classic, hand-drawn 2D style.",
     developer: "Team Cherry",
     release_date: "24 Feb, 2017",
     poster:
@@ -339,7 +339,7 @@ let listaJuegos = [
   {
     id: 14,
     title: "Tomb Raider",
-    genre: ["Accion", "Aventura"],
+    genre: ["Action", "Adventure"],
     description:
       "Tomb Raider explores the intense origin story of Lara Croft and her ascent from a young woman to a hardened survivor.",
     developer: "Crystal Dynamics",
@@ -365,9 +365,9 @@ let listaJuegos = [
   {
     id: 15,
     title: "Resident Evil Village",
-    genre: ["Accion", "FPS"],
+    genre: ["Action", "FPS"],
     description:
-      "Experience survival horror like never before in the 8th major installment in the Resident Evil franchise - Resident Evil Village. With detailed graphics, intense first-person Accion and masterful storytelling, the terror has never felt more realistic.",
+      "Experience survival horror like never before in the 8th major installment in the Resident Evil franchise - Resident Evil Village. With detailed graphics, intense first-person Action and masterful storytelling, the terror has never felt more realistic.",
     developer: "CAPCOM Co., Ltd.",
     release_date: "7 May, 2021",
     poster:
@@ -391,7 +391,7 @@ let listaJuegos = [
   {
     id: 16,
     title: "LEGO® Star Wars™: The Skywalker Saga",
-    genre: ["Accion", "Aventura"],
+    genre: ["Action", "Adventure"],
     description:
       "Play through all nine Skywalker saga films in a game unlike any other. With over 300 playable characters, over 100 vehicles, and 23 planets to explore, a galaxy far, far away has never been more fun! *Includes classic Obi-Wan Kenobi playable character",
     developer: "TT Games",
@@ -417,7 +417,7 @@ let listaJuegos = [
   {
     id: 17,
     title: "DOOM Eternal",
-    genre: ["Accion", "Disparos", "FPS"],
+    genre: ["Action", "Shooting", "FPS"],
     description:
       "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.",
     developer: "id Software",
@@ -443,9 +443,9 @@ let listaJuegos = [
   {
     id: 18,
     title: "DRAGON QUEST® XI S: Echoes of an Elusive Age™ - Definitive Edition",
-    genre: ["Aventura", "RPG"],
+    genre: ["Adventure", "RPG"],
     description:
-      "The Definitive Edition includes the critically acclaimed DRAGON QUEST XI, plus additional scenarios, orchestral soundtrack, 2D mode and more! Whether you are a longtime fan or a new Aventurar, this is the ultimate DQXI experience.",
+      "The Definitive Edition includes the critically acclaimed DRAGON QUEST XI, plus additional scenarios, orchestral soundtrack, 2D mode and more! Whether you are a longtime fan or a new Adventurer, this is the ultimate DQXI experience.",
     developer: "Square Enix",
     release_date: "4 Dec, 2020",
     poster:
@@ -495,7 +495,7 @@ let listaJuegos = [
   {
     id: 20,
     title: "God of War",
-    genre: ["Accion", "Aventura", "RPG"],
+    genre: ["Action", "Adventure", "RPG"],
     description:
       "His vengeance against the Gods of Olympus years behind him, Kratos now lives as a man in the realm of Norse Gods and monsters. It is in this harsh, unforgiving world that he must fight to survive… and teach his son to do the same.",
     developer: "Santa Monica Studio",
@@ -521,7 +521,7 @@ let listaJuegos = [
   {
     id: 21,
     title: "Red Dead Redemption 2",
-    genre: ["Accion", "Aventura", "Disparos"],
+    genre: ["Action", "Adventure", "Shooting"],
     description:
       "Winner of over 175 Game of the Year Awards and recipient of over 250 perfect scores, RDR2 is the epic tale of outlaw Arthur Morgan and the infamous Van der Linde gang, on the run across America at the dawn of the modern age. Also includes access to the shared living world of Red Dead Online.",
     developer: "Rockstar Games",
@@ -573,9 +573,9 @@ let listaJuegos = [
   {
     id: 24,
     title: "Mega Man 11",
-    genre: ["Accion"],
+    genre: ["Action"],
     description:
-      "Mega Man is back! The newest entry in this iconic series blends classic, challenging 2D platforming Accion with a fresh new visual style. The new Double Gear system boosts Mega Man's speed and power for a new twist to the satisfying gameplay the series is known for.",
+      "Mega Man is back! The newest entry in this iconic series blends classic, challenging 2D platforming Action with a fresh new visual style. The new Double Gear system boosts Mega Man's speed and power for a new twist to the satisfying gameplay the series is known for.",
     developer: "CAPCOM CO., LTD.",
     release_date: "2 Oct, 2018",
     poster:
@@ -599,9 +599,9 @@ let listaJuegos = [
   {
     id: 25,
     title: "Devil May Cry 5",
-    genre: ["Accion"],
+    genre: ["Action"],
     description:
-      "The ultimate Devil Hunter is back in style, in the game Accion fans have been waiting for.",
+      "The ultimate Devil Hunter is back in style, in the game Action fans have been waiting for.",
     developer: "CAPCOM Co., Ltd.",
     release_date: "7 Mar, 2019",
     poster:
@@ -625,9 +625,9 @@ let listaJuegos = [
   {
     id: 26,
     title: "Sekiro™: Shadows Die Twice - GOTY Edition",
-    genre: ["Accion", "Aventura"],
+    genre: ["Action", "Adventure"],
     description:
-      "Game of the Year - The Game Awards 2019 Best Accion Game of 2019 - IGN Carve your own clever path to vengeance in the award winning Aventura from developer FromSoftware, creators of Bloodborne and the Dark Souls series. Take Revenge. Restore Your Honor. Kill Ingeniously.",
+      "Game of the Year - The Game Awards 2019 Best Action Game of 2019 - IGN Carve your own clever path to vengeance in the award winning Adventure from developer FromSoftware, creators of Bloodborne and the Dark Souls series. Take Revenge. Restore Your Honor. Kill Ingeniously.",
     developer: "FromSoftware",
     release_date: "21 Mar, 2019",
     poster:
@@ -651,7 +651,7 @@ let listaJuegos = [
   {
     id: 27,
     title: "Monster Hunter: World",
-    genre: ["Accion"],
+    genre: ["Action"],
     description:
       "Welcome to a new world! In Monster Hunter: World, the latest installment in the series, you can enjoy the ultimate hunting experience, using everything at your disposal to hunt monsters in a new world teeming with surprises and excitement.",
     developer: "CAPCOM Co., Ltd.",
@@ -677,7 +677,7 @@ let listaJuegos = [
   {
     id: 28,
     title: "Resident Evil 7 Biohazard",
-    genre: ["Accion", "Aventura", "FPS"],
+    genre: ["Action", "Adventure", "FPS"],
     description:
       "Fear and isolation seep through the walls of an abandoned southern farmhouse. &quot;7&quot; marks a new beginning for survival horror with the “Isolated View” of the visceral new first-person perspective.",
     developer: "CAPCOM Co., Ltd.",
@@ -703,9 +703,9 @@ let listaJuegos = [
   {
     id: 29,
     title: "TEKKEN 7",
-    genre: ["Accion", "Sports", "Lucha"],
+    genre: ["Action", "Sports", "Fighting"],
     description:
-      "Discover the epic conclusion of the long-time clan warfare between members of the Mishima family. Powered by Unreal Engine 4, the legendary Lucha game franchise fights back with stunning story-driven cinematic battles and intense duels that can be enjoyed with friends and rivals.",
+      "Discover the epic conclusion of the long-time clan warfare between members of the Mishima family. Powered by Unreal Engine 4, the legendary Fighting game franchise fights back with stunning story-driven cinematic battles and intense duels that can be enjoyed with friends and rivals.",
     developer: "BANDAI NAMCO Studios Inc.",
     release_date: "1 Jun, 2017",
     poster:
@@ -756,7 +756,7 @@ let listaJuegos = [
     title: "Path of Exile",
     genre: ["Massively Multiplayer", "RPG"],
     description:
-      "You are an Exile, struggling to survive on the dark continent of Wraeclast, as you fight to earn power that will allow you to exact your revenge against those who wronged you. Created by hardcore gamers, Path of Exile is an online Accion RPG set in a dark fantasy world.",
+      "You are an Exile, struggling to survive on the dark continent of Wraeclast, as you fight to earn power that will allow you to exact your revenge against those who wronged you. Created by hardcore gamers, Path of Exile is an online Action RPG set in a dark fantasy world.",
     developer: "Grinding Gear Games",
     release_date: "23 Oct, 2013",
     poster:
@@ -780,9 +780,9 @@ let listaJuegos = [
   {
     id: 32,
     title: "QUAKE",
-    genre: ["Accion", "Disparos", "FPS"],
+    genre: ["Action", "Shooting", "FPS"],
     description:
-      "Developed by the award-winning id Software, Quake® is the ground-breaking, original dark fantasy first-person Disparos that inspires today’s retro-style FPS games. With Quake (Enhanced), experience the authentic, updated, and visually enhanced version of the original.",
+      "Developed by the award-winning id Software, Quake® is the ground-breaking, original dark fantasy first-person Shooting that inspires today’s retro-style FPS games. With Quake (Enhanced), experience the authentic, updated, and visually enhanced version of the original.",
     developer: "id Software",
     release_date: "3 Aug, 2007",
     poster:
@@ -805,7 +805,7 @@ let listaJuegos = [
   {
     id: 34,
     title: "Black Mesa",
-    genre: ["Accion", "Aventura", "Disparos", "FPS"],
+    genre: ["Action", "Adventure", "Shooting", "FPS"],
     description: "Relive Half-Life.",
     developer: "Crowbar Collective",
     release_date: "6 Mar, 2020",
@@ -830,9 +830,9 @@ let listaJuegos = [
   {
     id: 35,
     title: "Bayonetta",
-    genre: ["Aventura"],
+    genre: ["Adventure"],
     description:
-      "PlatinumGames’ universally acclaimed Accion masterpiece finally comes to PC. Experience the over-the-top stylish Accion in 60fps at unlocked HD resolutions. The definitive way to play: being bad never felt so good.",
+      "PlatinumGames’ universally acclaimed Action masterpiece finally comes to PC. Experience the over-the-top stylish Action in 60fps at unlocked HD resolutions. The definitive way to play: being bad never felt so good.",
     developer: "PlatinumGames",
     release_date: "11 Apr, 2017",
     poster:
@@ -882,9 +882,9 @@ let listaJuegos = [
   {
     id: 37,
     title: "Dead Cells",
-    genre: ["Accion", "Indie"],
+    genre: ["Action", "Indie"],
     description:
-      "Dead Cells is a rogue-lite, metroidvania inspired, Accion-platformer. You'll explore a sprawling, ever-changing castle... assuming you’re able to fight your way past its keepers in 2D souls-lite combat. No checkpoints. Kill, die, learn, repeat.",
+      "Dead Cells is a rogue-lite, metroidvania inspired, Action-platformer. You'll explore a sprawling, ever-changing castle... assuming you’re able to fight your way past its keepers in 2D souls-lite combat. No checkpoints. Kill, die, learn, repeat.",
     developer: "Motion Twin",
     release_date: "6 Aug, 2018",
     poster:
@@ -908,7 +908,7 @@ let listaJuegos = [
   {
     id: 38,
     title: "Hades",
-    genre: ["Accion", "Indie", "RPG"],
+    genre: ["Action", "Indie", "RPG"],
     description:
       "Defy the god of the dead as you hack and slash out of the Underworld in this rogue-like dungeon crawler from the creators of Bastion, Transistor, and Pyre.",
     developer: "Supergiant Games",
@@ -960,7 +960,7 @@ let listaJuegos = [
   {
     id: 40,
     title: "MONSTER HUNTER RISE",
-    genre: ["Accion"],
+    genre: ["Action"],
     description:
       "Rise to the challenge and join the hunt! In Monster Hunter Rise, the latest installment in the award-winning and top-selling Monster Hunter series, you’ll become a hunter, explore brand new maps and use a variety of weapons to take down fearsome monsters as part of an all-new storyline.",
     developer: "CAPCOM Co., Ltd.",
@@ -986,7 +986,7 @@ let listaJuegos = [
   {
     id: 41,
     title: "THE KING OF FIGHTERS XIV STEAM EDITION",
-    genre: ["Accion", "Lucha"],
+    genre: ["Action", "Fighting"],
     description:
       "THE KING OF FIGHTERS XIV finally hits STEAM! KOF XIV is back with its classic 2D gameplay and &quot;3-on-3 TEAM BATTLE&quot; game system but evolved to 3D! 58 charismatic fighters are about to clash in this new chapter of KOF!",
     developer: "SNK CORPORATION",
@@ -1012,9 +1012,9 @@ let listaJuegos = [
   {
     id: 42,
     title: "ENDER LILIES: Quietus of the Knights",
-    genre: ["Accion", "Indie", "RPG"],
+    genre: ["Action", "Indie", "RPG"],
     description:
-      "ENDER LILIES is a dark fantasy 2D Accion RPG about unraveling the mysteries of a destroyed kingdom. On this sorrowful journey, encounter horrific enemies against whom a moment of inattention could be fatal. Overcome these hardships and seek the truth with the help of fallen knights.",
+      "ENDER LILIES is a dark fantasy 2D Action RPG about unraveling the mysteries of a destroyed kingdom. On this sorrowful journey, encounter horrific enemies against whom a moment of inattention could be fatal. Overcome these hardships and seek the truth with the help of fallen knights.",
     developer: "Live Wire",
     release_date: "21 Jun, 2021",
     poster:
@@ -1038,9 +1038,9 @@ let listaJuegos = [
   {
     id: 43,
     title: "Ys VIII: Lacrimosa of DANA",
-    genre: ["Accion", "RPG"],
+    genre: ["Action", "RPG"],
     description:
-      "Ys returns with a brand new Aventura for the first time in 8 years! Adol awakens shipwrecked and stranded on a cursed island. There, he and the other shipwrecked passengers he rescues form a village to challenge fearsome beasts and mysterious ruins on the isolated island.",
+      "Ys returns with a brand new Adventure for the first time in 8 years! Adol awakens shipwrecked and stranded on a cursed island. There, he and the other shipwrecked passengers he rescues form a village to challenge fearsome beasts and mysterious ruins on the isolated island.",
     developer: "Nihon Falcom",
     release_date: "16 Apr, 2018",
     poster:
@@ -1064,7 +1064,7 @@ let listaJuegos = [
   {
     id: 44,
     title: "HITMAN™ 2",
-    genre: ["Accion"],
+    genre: ["Action"],
     description:
       "Travel the globe and track your targets across exotic sandbox locations in HITMAN™ 2. From sun-drenched streets to dark and dangerous rainforests, nowhere is safe from the world’s most creative assassin, Agent 47 in the ultimate spy thriller story.",
     developer: "IO Interactive A/S",
@@ -1090,7 +1090,7 @@ let listaJuegos = [
   {
     id: 45,
     title: "METAL GEAR SOLID V: THE PHANTOM PAIN",
-    genre: ["Accion", "Aventura"],
+    genre: ["Action", "Adventure"],
     description:
       "Ushering in a new era for the METAL GEAR franchise with cutting-edge technology powered by the Fox Engine, METAL GEAR SOLID V: The Phantom Pain, will provide players a first-rate gaming experience as they are offered tactical freedom to carry out open-world missions.",
     developer: "Konami Digital Entertainment",
@@ -1116,9 +1116,9 @@ let listaJuegos = [
   {
     id: 46,
     title: "Sonic Mania",
-    genre: ["Accion", "Aventura", "Casual"],
+    genre: ["Action", "Adventure", "Casual"],
     description:
-      "Sonic Mania is an all-new Aventura with Sonic, Tails, and Knuckles full of unique bosses, rolling 2D landscapes, and fun classic gameplay.",
+      "Sonic Mania is an all-new Adventure with Sonic, Tails, and Knuckles full of unique bosses, rolling 2D landscapes, and fun classic gameplay.",
     developer: "Christian Whitehead",
     release_date: "Aug 29, 2017",
     poster:
@@ -1168,7 +1168,7 @@ let listaJuegos = [
   {
     id: 48,
     title: "Yakuza: Like a Dragon",
-    genre: ["Accion", "Aventura", "RPG"],
+    genre: ["Action", "Adventure", "RPG"],
     description:
       "Become Ichiban Kasuga, a low-ranking yakuza grunt left on the brink of death by the man he trusted most. Take up your legendary bat and get ready to crack some underworld skulls in dynamic RPG combat set against the backdrop of modern-day Japan.",
     developer: "Ryu Ga Gotoku Studio",
@@ -1220,7 +1220,7 @@ let listaJuegos = [
   {
     id: 50,
     title: "Assassin's Creed® Unity",
-    genre: ["Accion", "Aventura"],
+    genre: ["Action", "Adventure"],
     description:
       "Assassin’s Creed® Unity tells the story of Arno, a young man who embarks upon an extraordinary journey to expose the true powers behind the French Revolution. In the brand new co-op mode, you and your friends will also be thrown in the middle of a ruthless struggle for the fate of a nation.",
     developer: "Ubisoft",
