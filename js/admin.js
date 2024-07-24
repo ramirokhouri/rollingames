@@ -1,5 +1,5 @@
 const videojuegos = JSON.parse(localStorage.getItem("juegos")) || [];
-const generos = ["Accion", "Aventura", "FPS", "Lucha", "RPG", "Disparos"];
+const generos = ["Action", "Adventure", "FPS", "Fighting", "RPG", "Shooting"];
 const admin_container = document.getElementById("admin-container");
 const tabla_juegos = document.getElementById("tabla-juegos");
 
@@ -97,7 +97,7 @@ function crearJuego(e) {
     const nuevo_juego  = {
         id,
         title,
-        genre: ["Accion","Lucha"],
+        genre: ["Action","Fighting"],
         description,
         developer,
         release_date,
