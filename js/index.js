@@ -71,7 +71,7 @@ function cargarJuegos() {
     contenido_categoria.setAttribute("class", "row g-3 mt-3 mb-3");
 
     // botón mostrar género
-    h1.innerHTML = `${genero} <button type="button" class="btn btn-primary" onclick="mostrarCategoria(${index})">Ver más</button>`;
+    h1.innerHTML = `${genero} <button type="button" class="btn btn-primary" onclick="mostrarCategoria(${index})">See more</button>`;
     categorias_container.appendChild(h1);
     categorias_container.appendChild(contenido_categoria);
 
